@@ -7,7 +7,6 @@
 		"styles/styles-page.css"
 	],
 	"paths": {
-		"soma": 	"js/libs/soma",
 		"text":		"js/libs/text",
 		"jquery":	"js/libs/jquery-1.7.2.min",
 		"module1": 	"modules/module1",
