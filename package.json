@@ -1,17 +1,17 @@
 {
-	"name": "hone",
+	"name": "hone.js",
 	"author": "Romuald Quantin <romu@soundstep.com> (http://www.soundstep.com)",
 	"description": "HTML, js, css optimization",
-	"keywords": ["hone", "optimization", "minify", "compress", "html", "css", "javascript", "requirejs"],
-	"homepage": "http://github.com/soundstep/optimizer",
+	"keywords": ["hone", "hone.js", "optimization", "minify", "compress", "html", "css", "javascript", "requirejs"],
+	"homepage": "https://github.com/soundstep/hone.js",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/soundstep/optimizer.git"
+		"url": "https://github.com/soundstep/hone.js"
 	},
 	"version": "0.0.1",
-	"main": "optimizer.js",
+	"main": "hone.js",
 	"bin": {
-		"cleancss":"./bin/optimizer"
+		"hone":"./bin/hone"
 	},
 	"dependencies": {
 		"clean-css": ">= 0.3.x",
