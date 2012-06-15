@@ -1,0 +1,15 @@
+@import url('./normalize.css');
+
+@import url('../modules/module1/styles/styles.css');
+@import url('../modules/module2/styles/styles.css');
+
+body {
+	padding: 10px;
+}
+nav {
+	margin-bottom: 10px;
+}
+#modules div {
+	float: left;
+	margin: 0px 10px 10px 0px;
+}

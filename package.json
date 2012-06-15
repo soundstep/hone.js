@@ -1,0 +1,27 @@
+{
+	"name": "hone",
+	"author": "Romuald Quantin <romu@soundstep.com> (http://www.soundstep.com)",
+	"description": "HTML, js, css optimization",
+	"keywords": ["hone", "optimization", "minify", "compress", "html", "css", "javascript", "requirejs"],
+	"homepage": "http://github.com/soundstep/optimizer",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/soundstep/optimizer.git"
+	},
+	"version": "0.0.1",
+	"main": "optimizer.js",
+	"bin": {
+		"cleancss":"./bin/optimizer"
+	},
+	"dependencies": {
+		"clean-css": ">= 0.3.x",
+		"requirejs": ">= 2.0.x"
+	},
+	"devDependencies": {
+		"commander": ">= 0.6.x",
+		"wrench": ">= 1.3.9"
+	},
+	"engines": {
+		"node": ">= 0.4.0"
+	}
+}

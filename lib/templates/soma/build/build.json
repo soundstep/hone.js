@@ -1,0 +1,24 @@
+{
+	"appDir": "../app",
+    "baseUrl": "./",
+    "dir": "../public",
+	"minCss": [
+		"styles/styles-home.css",
+		"styles/styles-page.css"
+	],
+	"paths": {
+		"soma": 	"js/libs/soma",
+		"text":		"js/libs/text",
+		"jquery":	"js/libs/jquery-1.7.2.min",
+		"module1": 	"modules/module1",
+		"module2": 	"modules/module2"
+	},
+	"modules": [
+		{
+			"name": "js/app"
+		},
+		{
+			"name": "js/app-page"
+		}
+    ]
+}

@@ -1,0 +1,12 @@
+@import url('./normalize.css');
+
+body {
+	padding: 10px;
+}
+nav {
+	margin-bottom: 10px;
+}
+#modules div {
+	float: left;
+	margin: 0px 10px 10px 0px;
+}

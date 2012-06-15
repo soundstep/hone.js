@@ -1,0 +1,10 @@
+/public
+
+node_modules
+
+.bin
+.idea
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db

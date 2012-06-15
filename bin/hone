@@ -1,0 +1,61 @@
+#!/usr/bin/env node
+
+var hone = require('../hone'),
+	cli = require('commander');
+
+cli
+	.version('0.0.1')
+	.usage('<commands> [options]')
+	.option('-v, --version', 'output the version number')
+	.option('-t, --template <name>', 'template to be created')
+	.option('-l, --skiphtml', 'skip the html minifying')
+	.option('-s, --skipcss', 'skip the css minifying');
+
+cli.on('--help', function(){
+	console.log('  hone:');
+	console.log('');
+	console.log('    $ hone --help');
+	console.log('    $ hone --version');
+	console.log('    $ hone create my-app');
+	console.log('    $ hone create my-app -template example');
+	console.log('    $ hone build');
+	console.log('    $ hone build --skiphtml');
+	console.log('    $ hone build --skipcss');
+	console.log('');
+});
+
+cli	.command('create <name>')
+	.description('Create an empty project.')
+	.action(function(name) {
+		hone.createProject(name, cli['template']);
+	});
+
+cli	.command('build')
+	.description('Optimize project.')
+	.action(function(env) {
+		hone.build(!!cli['skiphtml'], !!cli['skipcss']);
+	});
+
+
+
+//cli	.command('optimize-js')
+//	.description('Optimize javascript files.')
+//	.action(function() {
+//		hone.optimizeJs();
+//	});
+//
+//cli	.command('optimize-css')
+//	.description('Optimize css files.')
+//	.action(function() {
+//		hone.optimizeCss();
+//	});
+//
+//cli	.command('optimize-html')
+//	.description('Optimize html files.')
+//	.action(function() {
+//		hone.optimizeHtml();
+//	});
+
+cli.parse(process.argv);
+
+

@@ -1,0 +1,8 @@
+{
+    "appDir": "../app",
+    "baseUrl": "./",
+    "dir": "../public",
+	"minCss": [
+		"styles/styles-home.css"
+	]
+}
