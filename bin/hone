@@ -4,7 +4,7 @@ var hone = require('../hone'),
 	cli = require('commander');
 
 cli
-	.version('0.0.4')
+	.version('0.0.5')
 	.usage('<commands> [options]')
 	.option('-v, --version', 'output the version number')
 	.option('-t, --template <name>', 'template to be used when the application is created, "app" (default), "example" (amd modules)')
