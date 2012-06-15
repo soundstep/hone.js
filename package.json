@@ -6,9 +6,9 @@
 	"homepage": "https://github.com/soundstep/hone.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/soundstep/hone.js.git"
+		"url": "http://github.com/soundstep/hone.js.git"
 	},
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"main": "hone.js",
 	"bin": {
 		"hone":"./bin/hone"
