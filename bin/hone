@@ -7,9 +7,9 @@ cli
 	.version('0.0.1')
 	.usage('<commands> [options]')
 	.option('-v, --version', 'output the version number')
-	.option('-t, --template <name>', 'template to be created')
-	.option('-l, --skiphtml', 'skip the html minifying')
-	.option('-s, --skipcss', 'skip the css minifying');
+	.option('-t, --template <name>', 'template to be used when the application is created, "app" (default), "example" (amd modules)')
+	.option('-l, --skiphtml', 'don\'t minify the html')
+	.option('-s, --skipcss', 'don\'t minify the css');
 
 cli.on('--help', function(){
 	console.log('  hone:');
@@ -18,44 +18,22 @@ cli.on('--help', function(){
 	console.log('    $ hone --version');
 	console.log('    $ hone create my-app');
 	console.log('    $ hone create my-app -template example');
-	console.log('    $ hone build');
+	console.log('    $ hone build (build command requires to be in the application directory)');
 	console.log('    $ hone build --skiphtml');
 	console.log('    $ hone build --skipcss');
 	console.log('');
 });
 
 cli	.command('create <name>')
-	.description('Create an empty project.')
+	.description('Create an empty application.')
 	.action(function(name) {
-		hone.createProject(name, cli['template']);
+		hone.createApplication(name, cli['template']);
 	});
 
 cli	.command('build')
-	.description('Optimize project.')
+	.description('Optimize application.')
 	.action(function(env) {
 		hone.build(!!cli['skiphtml'], !!cli['skipcss']);
 	});
 
-
-
-//cli	.command('optimize-js')
-//	.description('Optimize javascript files.')
-//	.action(function() {
-//		hone.optimizeJs();
-//	});
-//
-//cli	.command('optimize-css')
-//	.description('Optimize css files.')
-//	.action(function() {
-//		hone.optimizeCss();
-//	});
-//
-//cli	.command('optimize-html')
-//	.description('Optimize html files.')
-//	.action(function() {
-//		hone.optimizeHtml();
-//	});
-
 cli.parse(process.argv);
-
-
