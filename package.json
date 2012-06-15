@@ -8,18 +8,18 @@
 		"type": "git",
 		"url": "https://github.com/soundstep/hone.js"
 	},
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "hone.js",
 	"bin": {
 		"hone":"./bin/hone"
 	},
 	"dependencies": {
 		"clean-css": ">= 0.3.x",
-		"requirejs": ">= 2.0.x"
-	},
-	"devDependencies": {
+		"requirejs": ">= 2.0.x",
 		"commander": ">= 0.6.x",
 		"wrench": ">= 1.3.9"
+	},
+	"devDependencies": {
 	},
 	"engines": {
 		"node": ">= 0.4.0"
