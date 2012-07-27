@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "http://github.com/soundstep/hone.js.git"
 	},
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"main": "hone.js",
 	"bin": {
 		"hone":"./bin/hone"
